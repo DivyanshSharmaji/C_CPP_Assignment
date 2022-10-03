@@ -1,0 +1,153 @@
+Assignment - 1 		A Job Ready Bootcamp in C++, DSA and IOT MySirG
+
+Input and output in C Language
+
+1. Write a program to print Hello Students on the screen.
+2. Write a program to print Hello in the first line and Students in the second line.
+3. Write a program to print “MySirG” on the screen. (Remember to print in double quotes)
+4. WAP to find the area of the circle. Take radius of circle from user as input and print the
+	result in below given format.
+	Expected output format – “Area of circle is A having the radius R”. Replace A with area
+	& R with radius.
+5. WAP to calculate the length of String using printf function.
+6. WAP to print the name of the user in double quotes.
+	Expected output format – “Hello , Amit Kumar”
+7. WAP to print “%d” on the screen.
+8. WAP to print “\n” on the screen.
+9. WAP to print “\\” on the screen.
+10. WAP to take date as an input in below given format and convert the date format and
+	display the result as given below.
+	User Input date format – “DD/MM/YYYY” (27/11/2022)
+	Output format –
+	“Day – DD , Month – MM , Year – YYYY” (Day – 27 ,Month – 07 , Year – 2022)
+11. WAP to take time as an input in below given format and convert the time format and
+	display the result as given below.
+	User Input date format – “HH:MM”
+	Output format – “HH hour and MM Minute”
+	Example –
+	“11:25” converted to “11 Hour and 25 Minute”
+12. Find output of below code:
+	int main()
+	{
+		int x = printf(“ineuron”);
+		printf(“%d”,x);
+		return 0;
+	}
+
+
+Solutions :
+
+Ans-1: #include<stdio.h>
+
+        int main(){
+        
+            printf("Hello Students");
+        
+            return 0;
+        }
+
+Ans-2:  #include<stdio.h>
+
+        int main(){
+        
+            printf("Hello\nStudents");
+        
+            return 0;
+        }
+
+Ans-3:  #include<stdio.h>
+
+        int main(){
+        
+            printf("\"MySirG\"");
+        
+            return 0;
+        }
+
+Ans-4:  #include<stdio.h>
+
+        int main(){
+        
+            float radius;
+            printf("Enter radius of the circle: ");
+            scanf("%f",&radius);
+            printf("Area of circle is %0.2f having the radius %0.2f\n",3.1415*radius*radius,radius);
+
+            return 0;
+        }
+
+Ans-5:  #include<stdio.h>
+
+        int main(){
+        
+            int length;
+            length = printf("The length of this string is: ");
+            printf("%d\n",length);
+
+            return 0;
+        }
+
+Ans-6:  #include<stdio.h>
+
+        int main(){
+        
+            char name[100];
+            printf("Enter your name: ");
+            gets(name);
+            printf("\"Hello , %s\"",name);
+
+            return 0;
+        }
+
+Ans-7:  #include<stdio.h>
+
+        int main(){
+        
+            printf("\"%%d\"");
+
+            return 0;
+        }
+
+Ans-8:  #include<stdio.h>
+
+        int main(){
+        
+            printf("\"\\n\"");
+
+            return 0;
+        }
+
+Ans-9:  #include<stdio.h>
+
+        int main(){
+        
+            printf("\"\\\\\"");
+
+            return 0;
+        }
+
+Ans-10: #include<stdio.h>
+
+        int main(){
+        
+            int d,m,y;
+            printf("Enter date as \"dd/mm/yyyy\" : ");
+            scanf("%d %d %d",&d,&m,&y);
+            printf("Day - %2d, Month - %2d, Year - %d\n",d,m,y);
+
+            return 0;
+        }
+
+Ans-11: #include<stdio.h>
+
+        int main(){
+        
+            int h,m;
+            printf("Enter time as \"HH:MM\" : ");
+            scanf("%d %d",&h,&m);
+            printf("%2d hour and %2d minute\n",h,m);
+
+            return 0;
+        }
+
+Ans-12: Output: ineuron7
