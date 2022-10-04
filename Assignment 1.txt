@@ -132,7 +132,7 @@ Ans-10: #include<stdio.h>
         
             int d,m,y;
             printf("Enter date as \"dd/mm/yyyy\" : ");
-            scanf("%d %d %d",&d,&m,&y);
+            scanf("%d/%d/%d",&d,&m,&y);
             printf("Day - %2d, Month - %2d, Year - %d\n",d,m,y);
 
             return 0;
@@ -144,7 +144,7 @@ Ans-11: #include<stdio.h>
         
             int h,m;
             printf("Enter time as \"HH:MM\" : ");
-            scanf("%d %d",&h,&m);
+            scanf("%d:%d",&h,&m);
             printf("%2d hour and %2d minute\n",h,m);
 
             return 0;
